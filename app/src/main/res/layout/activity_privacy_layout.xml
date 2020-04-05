@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".privacy_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/btn_back_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_action_navigation_arrow_back_inverted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="سياسه الخصوصيه"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="الخصوصيه"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:textColor="#494949"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="   خصوصيتك مهمة بالنسبة لك و لنا لذلك سنحمي المعلومات التي شاركتنا بها,لحماية معلوماتك لتطبيق سوق الاسره  يتبع مبادئ صارمة في حماية خصوصية و معلومات المستخدمين - نحن لن نبيع او نعطي اسمك او عنوان بريد او رقم هاتف او عنوان بريد الكتروني او أي معلومة اخرى متعلقة بك لأي شخص
+- نحن نستخدم مقاييس امنية عالية لحماية معلوماتك من اشخاص غير مصرح لهم بالدخول لمعلومات المستخدمين
+- سنطلب منك عندما نحتاج معلومات تعرفك شخصيا(معلومات شخصية) او تسمح لنا بالاتصال بك عموما هذه المعلومات تطلب عند انشاء حساب جديد او تسجيل دخول للموقع نحن نستخدم معلوماتك الشخصية لاربع غايات رئيسية
+لجعل الموقع اسهل استخداما بالنسبة لك حيث لن تطلب المعلومات في كل مرة
+لمساعدتك بسرعة في ايجاد خدمات او معلومات
+لمساعدتنا في خلق محتوى ملائم لاستخدامك الموقع
+لتنبيهك لتحديث منتج او عروض خاصة او تحديث معلومات او خدمات اخرى جديدة من سوق الاسره
+" />
+
+        <TextView
+
+android:layout_marginRight="5dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="الموافقه"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:textColor="#494949"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="اذا اخترت انك لا تريد التسجيل في التطبيق او تزويدنا بمعلومات شخصية لا زال بامكانك استخدام التطبيق لكن لا تستطيع الدخول للمرافق التي تحتاج ان تكون بحاجة الى تسجيل في التطبيق
+اذا قررت التسجيل معنا ستكون قادر على  استخدام كافه المزايا في التطبيق و خدمات اخرى.
+اذا كنت تريد التواصل معنا بخصوص مشاكل  متعلقة باتطبيق او المستخدمين لا تتردد بارسال مشاكلك واراك  لد البريد الالكتروني   familyStore2018@gmail.com
+" />
+    </ScrollView>
+</LinearLayout>

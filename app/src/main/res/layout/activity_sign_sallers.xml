@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_background"
+    android:orientation="vertical"
+    tools:context="com.example.osman.grandresturant.Registration.SignSallers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btns_layout"
+        android:layout_below="@+id/toolbar_layout"
+        android:background="#C3000000"
+        android:paddingTop="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/myImgeSign"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sign_up_icon" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/sign_location_textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="المدينة"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_map_marker_grey600_18dp" />
+
+
+                        </LinearLayout>
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/location_dialog_spinner_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:drawableEnd="@drawable/ic_chevron_down_white_24dp"
+                            android:hint="اختار البلد"
+                            android:textColor="#ffffff"
+                            app:met_textColorHint="#fff" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:weightSum="2">
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="20dp">
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/location_dialog_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:drawableEnd="@drawable/ic_chevron_down_white_24dp"
+                                    android:hint="اختار المدينة"
+                                    android:textColor="#ffffff"
+                                    app:met_textColorHint="#fff" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="20dp">
+
+                                <Button
+                                    android:id="@+id/location_dialog_btn_auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/colorPrimary"
+                                    android:clickable="true"
+                                    android:text="إختيار المكان الحالى"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/placeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input"
+                    android:drawableEnd="@drawable/name"
+                    android:gravity="right"
+                    android:hint="العنوان بالتفصيل"
+                    android:inputType="text"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="7dp"
+                    android:textColor="@color/home"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input"
+                    android:drawableEnd="@drawable/name"
+                    android:gravity="right"
+                    android:hint="الأسم"
+                    android:inputType="text"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="7dp"
+                    android:textColor="@color/home"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/phone_Et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="9"
+                        android:background="@drawable/input"
+                        android:drawableStart="@drawable/ic_phone_grey600_24dp"
+                        android:gravity="right"
+                        android:hint="رقم الموبايل "
+                        android:inputType="phone"
+                        android:padding="7dp"
+                        android:textColor="@color/home"
+                        android:textColorHint="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.rilixtech.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            app:ccp_arrowSize="30dp"
+                            app:ccp_textColor="#fff" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/emailEtSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:gravity="right"
+                    android:hint="البريد الإلكترونى"
+                    android:inputType="textEmailAddress"
+                    android:padding="7dp"
+                    android:textColor="@color/home"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp"
+
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/passwordEtSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input"
+                    android:drawableEnd="@drawable/ic_lock_outline"
+                    android:gravity="right"
+                    android:hint="كلمة السر"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textColor="@color/home"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/surepassSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input"
+                    android:drawableEnd="@drawable/ic_lock_outline"
+                    android:gravity="right"
+                    android:hint="تأكيد كلمة السر"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textColor="@color/home"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp">
+
+            <Button
+                android:id="@+id/signUpBtnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btninputcancel"
+                android:fontFamily="serif"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp">
+
+            <Button
+                android:id="@+id/signUpBtnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btninput"
+                android:fontFamily="serif"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

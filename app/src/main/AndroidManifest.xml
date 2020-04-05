@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.osman.grandresturant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Registration.Login" />
+        <activity android:name=".Registration.Sign" />
+        <activity android:name=".Registration.User_Profile_image" />
+        <activity android:name=".VistorType" />
+        <activity
+            android:name=".Activity_upload"
+            android:label="إضافة منتج جديد" />
+        <activity android:name=".ItemScreen" />
+        <activity
+            android:name=".ItemsRecycler"
+            android:label="المنتجات" />
+        <activity
+            android:name=".splash"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeScreen" />
+        <activity
+            android:name=".SallersRecycler"
+            android:label="التجار" />
+        <activity
+            android:name=".NavigationActivities.MyBasket"
+            android:label="السلة" />
+        <activity
+            android:name=".Registration.UserProfile"
+            android:label="الملف الشخصى" />
+        <activity
+            android:name=".NavigationActivities.MyAds"
+            android:label="عروضى" />
+        <activity android:name=".ItemUpdate" />
+        <activity
+            android:name=".Edit_Ads"
+            android:label="تعديل العرض" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Favorite_item"
+            android:label="المفضلة" />
+        <activity
+            android:name=".NavigationActivities.FeedBack"
+            android:label="رأيك" />
+        <activity
+            android:name=".NavigationActivities.NavigationSallerRecycler"
+            android:label="التجار" />
+        <activity
+            android:name=".NavigationActivities.NavigationCategoriesRecycler"
+            android:label="الأقسام" />
+        <activity
+            android:name=".NavigationActivities.NavItemRecycler"
+            android:label="المنتجات" />
+        <activity
+            android:name=".NavigationActivities.RequstsRecycler"
+            android:label="التجار" />
+        <activity android:name=".Registration.UserEdit" />
+        <activity android:name=".AboutAs" />
+        <activity android:name=".Privacy" />
+        <activity android:name=".Registration.LoginSallers" />
+        <activity android:name=".Registration.SignSallers"></activity>
+
+    </application>
+
+</manifest>

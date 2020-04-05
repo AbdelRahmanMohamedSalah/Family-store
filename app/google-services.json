@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "274246840565",
+    "firebase_url": "https://shopping-bf89a.firebaseio.com",
+    "project_id": "shopping-bf89a",
+    "storage_bucket": "shopping-bf89a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274246840565:android:5d091bb1e0ae0507",
+        "android_client_info": {
+          "package_name": "com.developer.osman.grandresturant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274246840565-ai099rhehgs9aca9ojghdditqbcg349a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.osman.grandresturant",
+            "certificate_hash": "32f08cad6c0e5d342d53c2de8f1f2f183b066fa6"
+          }
+        },
+        {
+          "client_id": "274246840565-2hepvbl5ku72smcv90iahl4gn0kti33t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.osman.grandresturant",
+            "certificate_hash": "334c778baa5c6ac12b112dd2bed030ff09f89c77"
+          }
+        },
+        {
+          "client_id": "274246840565-udvonfclm4alretdil2a2nc6gjdtfdi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeurkDNkS53iAUWwRIoFZGkbBYEu5Rr1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274246840565-udvonfclm4alretdil2a2nc6gjdtfdi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274246840565:android:b6c3d088c9369076",
+        "android_client_info": {
+          "package_name": "com.example.ataher.familystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274246840565-udvonfclm4alretdil2a2nc6gjdtfdi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeurkDNkS53iAUWwRIoFZGkbBYEu5Rr1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

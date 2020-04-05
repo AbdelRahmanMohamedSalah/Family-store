@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_company_Add_new_item"
+            android:icon="@drawable/add_item"
+            android:title="إضافة منتج جديد" />
+        <item
+            android:id="@+id/nav_company_Edite_Profile"
+            android:icon="@drawable/profile"
+            android:title="البيانات الشخصيه" />
+
+        <item
+            android:id="@+id/naveAddAds"
+            android:icon="@drawable/add_adsicon"
+            android:title="أضف أعلان" />
+
+
+        <item
+            android:id="@+id/nav_company_My_Ads"
+            android:icon="@drawable/item_defualt_image"
+            android:title="منتجاتى" />
+        <item
+            android:id="@+id/nav_company_New_Requests"
+            android:icon="@drawable/ic_calendar_clock_black_36dp"
+            android:title="طلبات المستخدمين" />
+        <item
+            android:id="@+id/nav_company_favorite_Ads"
+            android:icon="@drawable/favorit_icon"
+            android:visible="false"
+            android:title="المفضل" />
+
+        <item
+            android:id="@+id/nav_company_My_Requests"
+            android:icon="@drawable/add_nav"
+            android:title="السلة" />
+
+        <item
+            android:id="@+id/nav_company_sallers"
+            android:icon="@drawable/ic_account_group_black_36dp"
+            android:title="التجار" />
+        <item
+            android:id="@+id/nav_company_Categories"
+            android:icon="@drawable/category_defualt_icon"
+            android:title="الأقسام" />
+        <item
+            android:id="@+id/nav_company_FeedBack"
+            android:icon="@drawable/ic_comment_black_48dp"
+            android:title="رأيك" />
+        <item
+            android:id="@+id/nav_company_Abouts_Us"
+            android:icon="@drawable/ic_alert_circle_black_36dp"
+            android:title="عنا" />
+        <item
+            android:id="@+id/nav_company_Log_Out"
+            android:icon="@drawable/logout"
+            android:title="تسجيل الخروج" />
+    </group>
+
+
+
+</menu>

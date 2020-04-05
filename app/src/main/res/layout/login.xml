@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_background"
+    tools:context="com.example.osman.grandresturant.Registration.Login">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:padding="20dp"
+    android:background="#C3000000">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.osman.grandresturant.Registration.Login">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/iconapp"/>
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أسر الخير"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+          />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/emailEt"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/input"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint=" البريد الإليكترونى"
+            android:inputType="textEmailAddress"
+            android:padding="7dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15dp"
+            android:layout_gravity="center" />
+
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:background="@drawable/input"
+            android:drawableEnd="@drawable/ic_lock_outline"
+            android:hint=" كلمة السر"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:padding="7dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btninput"
+            android:fontFamily="serif"
+            android:text="تسجيل دخول"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ليس لديك حساب ؟ إنشاء حساب جديد"
+            android:textColor="#A6B9CA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.osman.grandresturant.Registration.UserProfile"
+
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_click"
+            android:fitsSystemWindows="true"
+            tools:context="com.example.osman.grandresturant.Registration.UserEdit">
+
+        <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:contentScrim="#f1d100"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/registration_background"
+                        app:layout_collapseMode="parallax" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#c3000000">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="vertical"
+                            android:paddingBottom="30dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imagebutton_user"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/default_user_icon_profile"
+                                    app:civ_border_color="#dec000"
+                                    app:civ_border_width="2dp" />
+                            </RelativeLayout>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="10dp"></View>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Email"
+                                    android:textColor="#fff"
+                                    android:textSize="18sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin" />
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="10dp">
+
+
+                            <EditText
+                                android:id="@+id/phoneEditProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/input"
+                                android:drawableEnd="@drawable/mycall"
+                                android:gravity="right"
+                                android:hint="  رقمي"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingTop="7dp"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/input"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/sign_location_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المدينة"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_map_marker_grey600_18dp" />
+
+
+            </LinearLayout>
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/edit_profile_spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableEnd="@drawable/ic_chevron_down_black_24dp"
+                android:hint="اختار البلد"
+                app:met_textColorHint="#000000"
+                android:textColor="#000000"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp">
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/edit_profile__spinner_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawableEnd="@drawable/ic_chevron_down_white_24dp"
+                        android:hint="اختار المدينة"
+                        app:met_textColorHint="#000000"
+                        android:textColor="#000000"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp">
+
+                    <Button
+                        android:id="@+id/location_dialog_btn_auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:textColor="#000000"
+                        android:text="إختيار المكان الحالى"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+
+                            <EditText
+
+                                android:id="@+id/placeEditProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/input"
+
+                                android:drawableStart="@drawable/location"
+
+                                android:gravity="right"
+
+                                android:hint="العنوان"
+
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingTop="7dp"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="10dp">
+
+
+                            <EditText
+
+                                android:id="@+id/emailEditProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/input"
+
+                                android:drawableEnd="@drawable/name"
+
+                                android:gravity="right"
+
+                                android:hint="أسمك"
+
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingTop="7dp"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/change_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/btninput"
+                                android:text="تغيير كلمة السر"
+                                android:textSize="15dp"
+                                android:visibility="visible"
+android:padding="8dp"
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/allLiniar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            >
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="9dp"
+                                app:cardCornerRadius="5dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/Linear_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="8dp"
+                                    android:visibility="visible"
+
+
+                                    >
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:padding="10dp">
+
+
+                                        <EditText
+
+                                            android:id="@+id/password_old"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/input"
+                                            android:drawableEnd="@drawable/name"
+                                            android:gravity="right"
+                                            android:hint="الرقم السري الحالي"
+                                            android:paddingBottom="7dp"
+                                            android:paddingLeft="7dp"
+                                            android:paddingRight="7dp"
+                                            android:paddingTop="7dp"
+                                            android:textSize="18dp" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:padding="10dp">
+
+
+                                        <EditText
+
+                                            android:id="@+id/password_new"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/input"
+                                            android:drawableEnd="@drawable/name"
+                                            android:gravity="right"
+                                            android:hint="الرقم السري الجديد"
+                                            android:paddingBottom="7dp"
+                                            android:paddingLeft="7dp"
+                                            android:paddingRight="7dp"
+                                            android:paddingTop="7dp"
+                                            android:textSize="18dp" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:padding="10dp">
+
+
+                                        <EditText
+
+                                            android:id="@+id/password_new2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/input"
+
+                                            android:drawableEnd="@drawable/name"
+
+                                            android:gravity="right"
+
+                                            android:hint="اعد كتابه الرقم السري"
+
+                                            android:paddingBottom="7dp"
+                                            android:paddingLeft="7dp"
+                                            android:paddingRight="7dp"
+                                            android:paddingTop="7dp"
+                                            android:textSize="18dp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Default"
+                android:elevation="8dp">
+
+                <Button
+                    android:id="@+id/editBtnProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="serif"
+                    android:text="تعديل"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+

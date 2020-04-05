@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Sallers"
+            android:icon="@drawable/ic_account_group_black_48dp"
+            android:title="التجار" />
+        <item
+            android:id="@+id/nav_Categories"
+            android:icon="@drawable/category_defualt_icon"
+            android:title="الأقسام" />
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:icon="@drawable/ic_alert_circle_black_48dp"
+            android:title="عنا" />
+        <item
+            android:id="@+id/nav_Login"
+            android:icon="@drawable/login"
+            android:title="تسجيل الدخول كمستخدم" />
+
+        <item
+            android:id="@+id/nav_Login_sallers"
+            android:icon="@drawable/login"
+            android:title="تسجيل الدخول كتاجر" />
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="#e7ffffff"--><!--android:orientation="vertical"--><!--android:weightSum="100"--><!--tools:context="com.example.osman.grandresturant.splash">-->
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.osman.grandresturant.splash">
+
+
+    <!--/<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:text="Retry"-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/retry"/>-->
+    <!---->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="100"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/ll"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:layout_marginTop="22dp"-->
+    <!---->
+    <!--/>-->
+    <!---->
+    <!--</FrameLayout>-->
+
+
+    <!--<ProgressBar-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:id="@+id/progress_splash"-->
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:visibility="visible"/>-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+
+
+    <io.github.yuweiguocn.lib.squareloading.SquareLoading
+        android:id="@+id/progress_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp"
+        app:dividerSize="2dp"
+        app:squareColor="#fff"
+        app:squareCorner="2dp"
+        app:squareSize="12dp"
+        app:xCount="4"
+        app:yCount="3" />
+
+    <View
+        android:id="@+id/splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/iconapp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/animated_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="متعه الشراء"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"
+                android:textSize="22sp"
+                />
+
+            <ImageView
+                android:id="@+id/animated_bar"
+                android:layout_width="2dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@android:color/white"
+                android:visibility="invisible" />
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/retry_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top|end"
+                android:text="Retry"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</io.codetail.widget.RevealFrameLayout>
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+
+

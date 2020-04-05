@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.osman.grandresturant.Activity_upload">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/Custom_Humborer">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="إختار صورة المنتج "
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/border_layout"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image_new_item"
+                            android:layout_width="120dp"
+
+                            android:layout_height="120dp"
+                            android:src="@drawable/add_new_item_image" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/type_design_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:drawableEnd="@drawable/ic_chevron_down_grey600_24dp"
+                android:drawableStart="@drawable/ic_border_all_grey600_24dp"
+                android:hint="اختار قسم المنتج "
+                android:textColorHint="#05ab9a"
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:hintTextAppearance="@style/hint_appearance"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintAnimationEnabled="true"
+
+
+                >
+
+                <EditText
+                    android:id="@+id/et_upload_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableStart="@drawable/ic_border_color_grey600_24dp"
+                    android:gravity="right"
+                    android:hint="أسم المنتج"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="20" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:hintTextAppearance="@style/hint_appearance"
+                android:layout_marginStart="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="500"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintAnimationEnabled="true"
+
+
+                >
+
+                <EditText
+                    android:id="@+id/et_upload_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+                    android:drawableStart="@drawable/ic_view_headline_grey600_24dp"
+                    android:gravity="right"
+                    android:hint="التفاصيل"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="500" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:hintTextAppearance="@style/hint_appearance"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintAnimationEnabled="true">
+
+                <EditText
+                    android:id="@+id/et_upload_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableStart="@drawable/ic_currency_usd_grey600_24dp"
+                    android:gravity="right"
+                    android:hint="السعر : جنيه مصرى"
+
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/upload_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="serif"
+                android:text="أضافة المنتج"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

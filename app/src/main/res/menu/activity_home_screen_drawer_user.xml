@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_User_Edite_Profile"
+            android:icon="@drawable/profile"
+            android:title="البيانات الشخصيه" />
+
+        <item
+            android:id="@+id/nav_User_favorite_Ads"
+            android:icon="@drawable/favorit_icon"
+            android:visible="false"
+            android:title="المفضل" />
+
+        <item
+            android:id="@+id/nav_User_Sallers"
+            android:icon="@drawable/ic_account_group_black_48dp"
+            android:title="التجار" />
+        <item
+            android:id="@+id/nav_Use_Categories"
+            android:icon="@drawable/category_defualt_icon"
+            android:title="الأقسام" />
+
+        <item
+            android:id="@+id/nav_User_My_Requests"
+            android:icon="@drawable/add_nav"
+            android:title="السلة" />
+
+        <item
+            android:id="@+id/nav_User_FeedBack"
+            android:icon="@drawable/ic_your_mind_24dp"
+            android:title="رأيك يهمنا" />
+        <item
+            android:id="@+id/nav_User_Abouts_Us"
+            android:icon="@drawable/ic_alert_circle_black_48dp"
+            android:title="عنا" />
+        <item
+            android:id="@+id/nav_User_Log_Out"
+            android:icon="@drawable/ic_login_black_48dp"
+            android:title="تسجيل الخروج" />
+    </group>
+
+</menu>
